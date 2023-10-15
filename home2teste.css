@@ -1,0 +1,144 @@
+/* Estilos gerais */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* Estilos do cabeçalho (header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #AA0E27;
+    color: white;
+}
+
+.logo img {
+    max-width: 65%;
+    height: auto;
+}
+
+
+.register-button {
+    font-weight: bold;
+    background-color: #fbfbfb;
+    color: #003563;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.login-button {
+    font-weight: bold;
+    background-color: #AA0E27;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.login-button a, .register-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: #f1f1f1;
+}
+
+.arruma {
+    display: flex;
+    align-items: center;
+    color: #f6f9ff;
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    
+    align-items: center;
+    color: #202020;
+    box-shadow: 1px 1px 6px #0000001c;
+
+}
+
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links>li>a {
+    padding-left: 20px;
+    color: #202020;
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo da página */
+.container {
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container h1 {
+    color: #003563;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container p {
+    font-size: 1.2rem;
+}
+
+/* Media queries para tornar o cabeçalho responsivo */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Media queries para o conteúdo responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
